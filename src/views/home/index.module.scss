@@ -1,0 +1,46 @@
+.home {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+}
+
+.video-item {
+  width: 224px;
+  height: 380px;
+  box-sizing: border-box;
+  // background-color: pink;
+  user-select: none;
+
+  .cover {
+    height: 308px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    // background-color: lightcoral;
+  }
+
+  .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 8px;
+    cursor: pointer;
+    // color: #e1e1e1;
+    color: #1d2129;
+  }
+
+  .desc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    height: 16px;
+    line-height: 16px;
+    margin: 2px 0 0;
+    // color: #727272;
+    color: #9499a0;
+  }
+}

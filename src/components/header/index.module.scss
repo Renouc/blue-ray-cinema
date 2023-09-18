@@ -1,0 +1,36 @@
+@import '@/assets/css/common.scss';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  user-select: none;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  @extend .wrapper;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  .title {
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+  img {
+    height: 100%;
+  }
+}
+
+.search {
+  width: 300px;
+}
