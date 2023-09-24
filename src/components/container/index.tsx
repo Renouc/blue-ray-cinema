@@ -2,7 +2,7 @@ import styles from './index.module.scss'
 import { Tabs } from 'antd'
 import type { TabsProps } from 'antd'
 import { Outlet, useNavigate } from 'react-router-dom'
-
+import '@/assets/css/index.scss'
 const items: TabsProps['items'] = [
   {
     key: '/main',

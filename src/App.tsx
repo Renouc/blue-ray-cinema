@@ -1,8 +1,9 @@
-import { Suspense } from 'react'
 import styles from './App.module.scss'
 import routes from './router/routes'
-import { useRoutes } from 'react-router-dom'
 import Loading from './components/loading'
+
+import { Suspense } from 'react'
+import { useRoutes } from 'react-router-dom'
 function App() {
   return (
     <div className={styles['app']}>

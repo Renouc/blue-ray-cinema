@@ -6,6 +6,8 @@ import cover4 from '@/assets/images/cover4.webp'
 import cover5 from '@/assets/images/cover5.webp'
 import cover6 from '@/assets/images/cover6.webp'
 import cover7 from '@/assets/images/cover7.webp'
+import cover8 from '@/assets/images/cover8.webp'
+import { useNavigate } from 'react-router-dom'
 
 const list = [
   {
@@ -43,16 +45,27 @@ const list = [
     desc: '我要打十个',
     cover: cover7,
   },
+  {
+    title: '画江湖之不良人第6季',
+    desc: '监国独揽朝政，漠北大军来势汹汹，岐国独木难支，且看李星云如何带领不良人绝地反击',
+    cover: cover8,
+  },
 ]
 function Home() {
+  const navigate = useNavigate()
+  function handleClick() {
+    navigate('/play')
+  }
   return (
     <div className={styles['home']}>
       {list.map((item, index) => (
         <div className={styles['video-item']} key={index}>
-          <div className={styles['cover']}>
+          <div className={styles['cover']} onClick={handleClick}>
             <img src={item.cover} alt="" />
           </div>
-          <p className={styles['title']}>{item.title}</p>
+          <p className={styles['title']} onClick={handleClick}>
+            {item.title}
+          </p>
           <p className={styles['desc']}>{item.desc}</p>
         </div>
       ))}

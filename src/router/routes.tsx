@@ -1,7 +1,13 @@
 import { Navigate, RouteObject } from 'react-router-dom'
-import { Cartoon, Film, Home, Main, NotFound, Teleplay } from './components'
-import { Suspense } from 'react'
-import Loading from '@/components/loading'
+import {
+  Cartoon,
+  Film,
+  Home,
+  Main,
+  NotFound,
+  Teleplay,
+  Play,
+} from './components'
 const routes: RouteObject[] = [
   {
     path: '/',
@@ -28,6 +34,10 @@ const routes: RouteObject[] = [
         element: <Cartoon />,
       },
     ],
+  },
+  {
+    path: '/play',
+    element: <Play />,
   },
   {
     path: '*',
