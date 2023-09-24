@@ -1,4 +1,16 @@
 .footer {
   height: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-flow: column;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
   background-color: #2a2a32;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
 }
